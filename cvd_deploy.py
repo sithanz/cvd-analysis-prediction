@@ -46,12 +46,19 @@ st.write('This app predicts the diagnosis of heart disease via a machine learnin
 with st.form("cvd app"):
     age = st.slider('Age', 20, 80, 50, step=1)
     
-    cp_dict = {'typical angina (0)': 0,'atypical angina (1)': 1,'non-anginal pain (2)': 2,'asymptomatic (3)': 3}
-    cp_key = st.radio("Chest Pain type", ('asymptomatic (3)','typical angina (0)','atypical angina (1)','non-anginal pain (2)'))
+    cp_dict = {'typical angina (0)': 0,'atypical angina (1)': 1,
+               'non-anginal pain (2)': 2,'asymptomatic (3)': 3}
+    cp_key = st.radio("Chest Pain type", ('asymptomatic (3)',
+                                          'typical angina (0)',
+                                          'atypical angina (1)',
+                                          'non-anginal pain (2)'))
     cp = cp_dict[cp_key]
     
-    thall_dict = {'fixed defect (1)':1,'normal / no thalassemia (2)':2,'reversable defect (3)':3}
-    thall_key = st.radio("Thalassemia", ('normal / no thalassemia (2)','fixed defect (1)','reversable defect (3)'))
+    thall_dict = {'fixed defect (1)':1,'normal / no thalassemia (2)':2,
+                  'reversable defect (3)':3}
+    thall_key = st.radio("Thalassemia", ('normal / no thalassemia (2)',
+                                         'fixed defect (1)',
+                                         'reversable defect (3)'))
     thall = thall_dict[thall_key]
     
     thalachh = st.slider('Maximum heart rate achieved', 65, 250, 100, step=1)

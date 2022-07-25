@@ -50,4 +50,4 @@ The following gif demonstrates how the app is used once it is deployed.
 
 Data : [Heart Attack Analysis & Prediction Dataset](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
 
-Special acknowledgement: Warren Loo & DS03
+Thank you for reading! :smile_cat:

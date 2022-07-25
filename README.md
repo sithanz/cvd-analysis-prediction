@@ -30,7 +30,7 @@ The following figures display how the model performs on the test dataset (y_test
 
 ![Confusion matrix](static/confusion_matrix.png)
 
-All evaluation metrics (precision, recall, f1-score, accuracy) were higher than 0.70.
+All evaluation metrics (precision, recall, f1-score, accuracy) were higher than 0.75.
 
 ## Model Deployment
 To further evaluate the performance of the model, a set of data independent of the training data was used to determine its accuracy.

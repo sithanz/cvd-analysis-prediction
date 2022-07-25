@@ -40,7 +40,7 @@ To further evaluate the performance of the model, a set of data independent of t
 Using this data, the accuracy of the model was found to be 0.90.
 
 ## App Deployment
-An app was designed using Streamlit to allow online usage of the trained model.
+An app was designed using Streamlit to allow usage of the trained model on a web browser.
 
 The following gif demonstrates how the app is used once it is deployed.
 

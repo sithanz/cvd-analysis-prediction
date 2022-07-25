@@ -79,18 +79,17 @@ for i in con_col:
 #%% Data Cleaning
 
 # Drop duplicates
-
 df = df.drop_duplicates()
 
-# Replace '0' in 'thall' with NaN
-df['thall'] = df['thall'].replace(0, np.nan)
-(df['thall'] == 0).sum() # '0' values removed
-df.isna().sum() # 2 NaN in thall
+# Replace 'null' values with NaN
+def nan_replace(column_name,value):
+    df[column_name] = df[column_name].replace(value, np.nan)
+    print((df[column_name] == value).sum())
 
-# Replace '4' in 'caa' with NaN
-df['caa'] = df['caa'].replace(4, np.nan)
-(df['caa'] == 4).sum() # '4' values removed
-df.isna().sum() # 5 NaN in caa
+nan_replace('thall',0)
+nan_replace('caa',4)
+
+df.isna().sum() # 4 NaN in caa, 2 NaN in thall
 
 # Fill in missing values via imputation
 knn_imputer = KNNImputer()
